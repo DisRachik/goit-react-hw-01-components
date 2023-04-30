@@ -1,5 +1,5 @@
-import { capitalizeFirstLetter } from 'helpers/helpers';
 import PropTypes from 'prop-types';
+import { capitalizeFirstLetter } from 'helpers/helpers';
 
 export const ProfileStats = ({ label, quantity }) => (
   <li>
