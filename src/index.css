@@ -1,5 +1,21 @@
 @import-normalize; /* bring in normalize.css styles */
 
+h2,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +23,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: #122236;
+  text-align: center;
 }
 
 code {

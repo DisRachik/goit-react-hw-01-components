@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from './TransactionHistory.module.css';
 import { capitalizeFirstLetter } from 'helpers/helpers';
 
 export const TransactionHistory = ({ items }) => {
   const tableDataName = Object.keys(items[0]).filter(name => name !== 'id');
   return (
-    <table className="transaction-history">
+    <table className={css['transaction-history']}>
       <thead>
         <tr>
           {tableDataName.map(name => (

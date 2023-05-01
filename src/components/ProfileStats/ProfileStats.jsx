@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from './ProfileStats.module.css';
 import { capitalizeFirstLetter } from 'helpers/helpers';
 
 export const ProfileStats = ({ label, quantity }) => (
   <li>
-    <span className="label">{capitalizeFirstLetter(label)}</span>
-    <span className="quantity">{quantity}</span>
+    <span className={css.label}>{capitalizeFirstLetter(label)}</span>
+    <span className={css.quantity}>{quantity}</span>
   </li>
 );
 

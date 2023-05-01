@@ -1,0 +1,36 @@
+.item {
+  width: 270px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #cdcdcd;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+.isOnline {
+  background-color: green;
+}
+
+.avatar {
+  background-color: #c674c7;
+  border-radius: 5px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 400;
+}

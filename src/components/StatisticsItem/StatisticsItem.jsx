@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './StatisticsItem.module.css';
 import { getRandomColorScheme } from 'helpers/helpers';
 
 export const StatisticsItem = ({ stats: { label, percentage } }) => {
@@ -6,11 +7,11 @@ export const StatisticsItem = ({ stats: { label, percentage } }) => {
 
   return (
     <li
-      className="item"
+      className={css.item}
       style={{ backgroundColor: `${backgroundColor}`, color: `${textColor}` }}
     >
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+      <span className={css.label}>{label}</span>
+      <span className={css.percentage}>{percentage}%</span>
     </li>
   );
 };
